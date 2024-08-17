@@ -33,7 +33,7 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
      ![alt text](images/zenmap.png)
    - Then you should see the below in SnortIDS console. \
      ![alt text](images/nmap.png)
-9. Analyse the log files
+9. Analyse the log files:
    - logs can be located in: \
      ![alt text](images/log.png)
    - logs can be examined by Wireshark: \
