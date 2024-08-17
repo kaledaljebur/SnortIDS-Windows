@@ -1,4 +1,4 @@
-This is customised SnortIDS to suite Microsoft Windows, follow the following step to get it working:
+This is customised SnortIDS to suite Microsoft Windows, follow the following steps to get it working:
 
 1. It is better to install it in Win10 to avoid the possible 0xc00000b error if you use Win Sever.
 2. Download and install Wireshark or just [Npcap](https://npcap.com/dist/npcap-1.79.exe).
@@ -9,17 +9,18 @@ This is customised SnortIDS to suite Microsoft Windows, follow the following ste
    ![alt text](images/snort-in-c-drive.png)
 4. Run CMD as administrator and move to SnortIDS folder using:
    - cd c:\snort\bin
-5. Check the order of the available network adapters to select the one will be used by SnortIDS \
+5. Check the number of the available network adapters to select the one will be used by SnortIDS \
    ![alt text](images/snort-w.png)
 
    - In my case the number is 1 according to the above image
 
 6. Run SnortIDS using
-   - snort -i 1 -c C:\Snort\etc\snort.conf -A console
+   - snort -i 1 -c C:\Snort\etc\snort.conf -A console \
+     ![alt text](images/snort-run.png)
    - Note that
-     1. -i for the interface number
-     2. -c for SnortIDS configuration file
-     3. -A Alerts will be listed in the console
+     - -i for the interface number
+     - -c for SnortIDS configuration file
+     - -A Alerts will be listed in the console
 7. Test the ICMP detection, just to make sure the topology is working as expected.
 
    - Ping continuously the SnortIDS machine from external machine \
@@ -35,5 +36,5 @@ This is customised SnortIDS to suite Microsoft Windows, follow the following ste
 9. Analyse the log files
    - logs can be located in: \
      ![alt text](images/log.png)
-   - logs can be located in: \
+   - logs can be examined by: \
      ![alt text](images/wireshark.png)
