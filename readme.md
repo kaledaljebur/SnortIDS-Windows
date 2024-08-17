@@ -5,7 +5,7 @@ This is customised SnortIDS to suite Microsoft Windows, follow the following ste
 
    - Npcap needed for SnortIDS and it is part of Wireshark
 
-3. Download SnortIDS from this [repository](https://github.com/kaledaljebur/snortids-windows/blob/main/Snort.zip) and unzip it in the C drive in Windows to be in c:\Snort\ \
+3. Download SnortIDS from this [repository](https://github.com/kaledaljebur/snortids-windows/raw/main/Snort.zip) and unzip it in the C drive in Windows to be in c:\Snort\ \
    ![alt text](images/snort-in-c-drive.png)
 4. Run CMD as administrator and move to SnortIDS folder using:
    - cd c:\snort\bin
