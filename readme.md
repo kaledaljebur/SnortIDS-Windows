@@ -1,9 +1,10 @@
 This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following steps to get it working:
 
-1. It is better to install it in Win10 to avoid the possible **_0xc00000b_** error if you use Win Sever.
+1. It is better to install it in Windows 10 to avoid the possible **_0xc00000b_** error if you use Windows Sever (there is another installation guide for Windows server).
+   - This Windows 10 can be used as a Network (or Host) IDS and security analyser, but a copy of the network traffic should be forwarded to it.
 2. Download and install Wireshark or just [Npcap](https://npcap.com/dist/npcap-1.79.exe).
 
-   - Npcap needed for SnortIDS and it is part of Wireshark.
+   - Npcap needed by SnortIDS for traffic capturing and it is part of Wireshark.
 
 3. Download SnortIDS from this [repository](https://github.com/kaledaljebur/snortids-windows/raw/main/Snort.zip) and unzip it in the C drive in Windows to be in c:\Snort\ \
    ![alt text](images/snort-in-c-drive.png)
@@ -11,9 +12,7 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
    - cd c:\snort\bin
 5. Check the numbers of the available network adapters to select the one will be used by SnortIDS. \
    ![alt text](images/snort-w.png)
-
    - In my case the number is 1 according to the above image, because 2 is for the loopback interface.
-
 6. Run SnortIDS using:
    - snort -i 1 -c C:\Snort\etc\snort.conf -A console \
      ![alt text](images/snort-run.png)
@@ -38,3 +37,8 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
      ![alt text](images/log.png)
    - logs can be examined by Wireshark: \
      ![alt text](images/wireshark.png)
+10. The two tested rules in SnortIDS can locate them here: \
+     c:\Snort\rules\local.rules \
+     First rule is for general ICMP ping detection if a quick test is needed, while the second is for SYN port scanning detection. \
+     You can add # at the start of the line to disable any ot them. \
+     SnortIDS will need to be restarted for any changes.
