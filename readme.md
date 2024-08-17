@@ -1,6 +1,6 @@
 This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following steps to get it working:
 
-1. It is better to install it in Win10 to avoid the possible 0xc00000b error if you use Win Sever.
+1. It is better to install it in Win10 to avoid the possible **_0xc00000b_** error if you use Win Sever.
 2. Download and install Wireshark or just [Npcap](https://npcap.com/dist/npcap-1.79.exe).
 
    - Npcap needed for SnortIDS and it is part of Wireshark.
