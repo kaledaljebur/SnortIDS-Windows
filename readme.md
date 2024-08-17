@@ -1,4 +1,4 @@
-This is customised SnortIDS to suite Microsoft Windows, follow the following steps to get it working:
+This is customised SnortIDS to suit Microsoft Windows, follow the following steps to get it working:
 
 1. It is better to install it in Win10 to avoid the possible 0xc00000b error if you use Win Sever.
 2. Download and install Wireshark or just [Npcap](https://npcap.com/dist/npcap-1.79.exe).
