@@ -12,7 +12,7 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
 4. Run CMD as administrator and change directory to SnortIDS folder using:
    - cd c:\snort\bin \
      ![alt text](images/changedir.png)
-5. Check the numbers of the available network adapters to select the one will be used by SnortIDS. \
+5. Check the numbers of the available network adapters to select the one will be used by SnortIDS. 
    - snort -W
      ![alt text](images/snort-w.png)
    - In my case the number is 1 according to the above image, because 2 is for the loopback interface.
