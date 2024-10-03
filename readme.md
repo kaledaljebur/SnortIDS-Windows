@@ -15,7 +15,7 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
    - cd c:\snort\bin \
      ![alt text](images/changedir.png)
 5. Check the version of SnortIDS, just to make sure there are no errors
-    - snort -W \
+    - snort -V \
      ![alt text](images/snort-version.png)
     - If you see **_0xc00000b_** error, then follow the suggestion in step 2 above.
 6. Check the numbers of the available network adapters to select the one will be used by SnortIDS. 
