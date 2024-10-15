@@ -43,8 +43,9 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
      ![alt text](images/snort-icmp.png)
 
 1. Test the detection of SYN port scanning, this represent a passive attack as requeued by the assignment, ask your teacher if you have any questions.
-   - Download and install [Zenmap](https://nmap.org/dist/nmap-7.95-setup.exe) in the ping Windows machine, then run it with the following options: \
-     ![alt text](images/zenmap.png)
+   - Download and install [Zenmap](https://nmap.org/dist/nmap-7.95-setup.exe) in the Windows machine used for Ping before, then run it with the following options: \
+     ![alt text](images/zenmap.png) \
+     Notice the 192.168.8.160 is the IP of SnortIDS machine.
    - Then you should see the below in SnortIDS console. \
      ![alt text](images/nmap.png)
 1. Download and install Wireshark, then analyse the log files:
