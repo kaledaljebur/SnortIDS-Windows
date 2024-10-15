@@ -60,7 +60,7 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
       First rule at line 22 is for general ICMP ping detection if a quick topology test is needed. \
       The second at line 25 is for detecting SYN port scanning. \
       You can add # at the start of the line to disable any of them. \
-      SnortIDS will need to be restarted for any changes. \
+      SnortIDS will need to be restarted for any changes. 
 
 1. Restarting SnortIDS can be by stopping the current running command using CRTL+C in the keyboard then run the SnordIDS command again (in step 7 above).
 1. Check the SnortIDS [manual](http://manual-snort-org.s3-website-us-east-1.amazonaws.com/) for more details.
