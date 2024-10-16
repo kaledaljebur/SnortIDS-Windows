@@ -1,8 +1,8 @@
 This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following steps to get it working:
 
-1. It is better to install it in a fresh Windows 10 to avoid the possible **_0xc00000b_** error if you use Windows Sever (there is another installation guide for Windows server case).
-   - This Windows 10 can be used as a Network or Host IDS and also as a security analyser (security analyser is discussed in a different guide), but a copy of the network traffic should be forwarded to it in case of Network IDS.
-   - The following steps will use the Windows 10 as Host IDS, i.e, no need to forward any traffic to Windows 10.
+1. It is better to install it in a fresh Windows 10/11 to avoid the possible **_0xc00000b_** error, there is another installation guide suitable for Windows server.
+    - The Windows 10/11 can be used as a Network or Host IDS and also as a security analyser (security analyser is discussed in a different guide), but a copy of the network traffic should be forwarded to it in case of Network IDS.
+    - The following steps will use the Windows 10/11 as Host IDS, i.e, no need to forward any traffic to Windows 10/11.
 1. Download and install [Npcap](https://npcap.com/dist/npcap-1.79.exe).
 
    - Npcap needed by SnortIDS for traffic capturing and it is part of Wireshark.
@@ -40,7 +40,7 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
    - Ping continuously the SnortIDS machine from external machine. \
      ![alt text](images/ping.png) \
      Notice 192.168.8.160 is the IP of SnortIDS machine.
-   - Then you should see the below in SnortIDS console even if the host firewall is blocking suck inbound requests: \
+   - Then you should see the below in SnortIDS console even if the host firewall is blocking such inbound requests: \
      ![alt text](images/snort-icmp.png)
 
 1. Test the detection of SYN port scanning, this represent a passive attack as requeued by the assignment, ask your teacher if you have any questions.
