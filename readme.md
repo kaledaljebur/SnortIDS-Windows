@@ -1,12 +1,14 @@
 This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following steps to get it working:
 
-1. It is better to install it in a fresh Windows 10/11 to avoid the possible **_0xc00000b_** error, there is another installation guide suitable for Windows server.
-    - The Windows 10/11 can be used as a Network or Host IDS and also as a security analyser (security analyser is discussed in a different guide), but a copy of the network traffic should be forwarded to it in case of Network IDS.
-    - The following steps will use the Windows 10/11 as Host IDS, i.e, no need to forward any traffic to Windows 10/11.
+1. Main notes: 
+    - This has been tested in Windows 10,11, and Windows Server 2022:
+    - It is better to install it in a fresh Windows to avoid the possible **_0xc00000b_** error.
+    - The Windows machine can function as either a Network IDS or a Host IDS. However, to operate as a Network IDS, a copy of the network traffic must be forwarded to it.
+    - The following steps will use the Windows machine as Host IDS, i.e, no need to forward any traffic to Windows machine.
+    
 1. Download and install [Npcap](https://npcap.com/dist/npcap-1.79.exe).
-
    - Npcap needed by SnortIDS for traffic capturing and it is part of Wireshark.
-   - Although Npcap  will be installed with Wireshark, it is better not to install Wireshark before Npcap because this will trigger **_0xc00000b_** error. If you see the **_0xc00000b_** error because you installed Wireshark first, then just remove Wireshark and Npcap, restart the machine, install Npcap first.
+   - Although Npcap  will be installed with Wireshark, it is better not to install Wireshark before Npcap because this will trigger **_0xc00000b_** error. If you see the **_0xc00000b_** error because you have installed Wireshark first, then just remove Wireshark and Npcap, restart the machine, then install Npcap first.
    
 1. Download SnortIDS from this [repository](https://github.com/kaledaljebur/snortids-windows/raw/main/Snort.zip) and unzip it in the C drive in Windows to be in
    - c:\Snort\ \
