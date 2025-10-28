@@ -6,7 +6,7 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
     - The Windows machine can function as either a Network IDS or a Host IDS. However, to operate as a Network IDS, a copy of the network traffic must be forwarded to it.
     - The following steps will use the Windows machine as Host IDS, i.e, no need to forward any traffic to Windows machine.
 
-1. Download and install [Npcap](https://npcap.com/dist/npcap-1.79.exe).
+1. Download and install [Npcap](https://npcap.com/#download).
    - Npcap needed by SnortIDS for traffic capturing and it is part of Wireshark.
    - Although Npcap  will be installed with Wireshark, it is better not to install Wireshark before Npcap because this will trigger **_0xc00000b_** error. If you see the **_0xc00000b_** error because you have installed Wireshark first, then just remove Wireshark and Npcap, restart the machine, then install Npcap first.
    
