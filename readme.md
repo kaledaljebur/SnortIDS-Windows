@@ -57,7 +57,7 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
      ![alt text](images/log.png)
    - Logs can be examined by Wireshark: \
      ![alt text](images/wireshark.png)
-1. The two tested rules in SnortIDS can be locate here: \
+1. The two tested rules in SnortIDS can be locate here: 
     - `c:\Snort\rules\local.rules` \
       ![alt text](images/rules.png) 
     - First rule at line 22 which is \
