@@ -8,7 +8,7 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
 
 1. Download and install [Npcap](https://npcap.com/#download).
    - Npcap needed by SnortIDS for traffic capturing and it is part of Wireshark.
-   - Although Npcap  will be installed with Wireshark, it is better not to install Wireshark before Npcap because this will trigger **_0xc00000b_** error. If you see the **_0xc00000b_** error because you have installed Wireshark first, then just remove Wireshark and Npcap, restart the machine, then install Npcap first.
+   - Although Npcap  will be installed with Wireshark, it is better not to install Wireshark before Npcap because this may trigger **_0xc00000b_** error. If you see the **_0xc00000b_** error later because you have installed Wireshark first, then just remove Wireshark and Npcap, restart the machine, then install Npcap first.
    
 1. Download SnortIDS from this [repository](https://github.com/kaledaljebur/snortids-windows/raw/main/Snort.zip) and unzip it in the C drive in Windows to be in
    - `c:\Snort\` \
@@ -19,11 +19,11 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
 1. Check the version of SnortIDS, just to make sure there are no errors
     - `snort -V` \
      ![alt text](images/snort-version.png)
-    - If you see **_0xc00000b_** error, then follow the suggestion in step 2 above.
+    - If you see **_0xc00000b_** error, then follow the suggestion in step `2` above.
 1. Check the numbers of the available network adapters to select the one will be monitored by SnortIDS. 
    - `snort -W`
      ![alt text](images/snort-w.png)
-   - In my case, the number is 1 according to the above image, because 2 is for the loopback interface.
+   - In my case, the number is `1` according to the above image, because `2` is for the loopback interface.
 
 1. Run SnortIDS using:
    - `snort -i 1 -c C:\Snort\etc\snort.conf -A console` \
@@ -31,7 +31,7 @@ This is customised SnortIDS v2.9 to suit Microsoft Windows, follow the following
      ![alt text](images/snort-running.png)
    - Notice:
      - The above image means SnortIDS is running fine and ready for detection.
-     - `-i` for the interface number.
+     - `-i` for the network interface number, it is number `1` in my case.
      - `-c` for SnortIDS configuration file.
      - `-A console` Alerts will be listed in the console.
     - You can test the configuration file and rules without running SnortIDS using: \
